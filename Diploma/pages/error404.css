@@ -1,0 +1,27 @@
+.err404{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 10em;
+    color: #fcf9f9;
+    position: relative; /* Относительное позиционирование */
+}
+
+.notfound {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+.notfound a {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.notfound a:hover {
+    color: #fc0;
+    text-decoration: none;
+}
