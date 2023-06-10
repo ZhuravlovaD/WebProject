@@ -50,3 +50,4 @@ function selectOne($table, $params) {
 
     return $query->fetch();
 }
+

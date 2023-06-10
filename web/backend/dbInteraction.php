@@ -4,6 +4,14 @@ include 'dbReq.php';
 $isSubmit = false;
 $errorMsg = '';
 
+$res=$pdo->query('CALL `proc1`(@p0); SELECT @p0 AS `proc1`;')->fetchAll();
+        var_dump($res);
+    $res1 = $pdo->query('CALL `proc2`(@p0); SELECT @p0 AS `proc2`;')->fetchAll();
+        var_dump($res1);
+    $res2 = $pdo->query('CALL `proc3`(@p0); SELECT @p0 AS `proc3`;')->fetchAll();
+        var_dump($res2);
+        
+
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
     $login = trim($_POST['username']);
     $password = trim($_POST['password']);
@@ -57,3 +65,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
         }
     }
 }
+
